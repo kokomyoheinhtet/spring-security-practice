@@ -8,7 +8,6 @@ public class Locks {
     private static Lock lock = new ReentrantLock();
 
     private static void increment() {
-
         lock.lock();
         for (int i = 0; i < 10000; i++) {
             counter++;
